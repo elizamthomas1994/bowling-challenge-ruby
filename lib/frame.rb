@@ -17,18 +17,10 @@ class Frame
   end
 
   def strike?
-    if @roll1 === 10
-      return true
-    else 
-      return false
-    end
+    @roll1 == 10
   end
 
   def spare?
-    if @roll1 + @roll2 == 10
-      return true
-    else
-      return false
-    end
+    @roll1 != 10 && total == 10
   end
 end
