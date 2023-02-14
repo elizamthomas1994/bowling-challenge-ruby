@@ -15,4 +15,20 @@ class Frame
   def total
     return @roll1 + @roll2
   end
+
+  def strike?
+    if @roll1 === 10
+      return true
+    else 
+      return false
+    end
+  end
+
+  def spare?
+    if @roll1 + @roll2 == 10
+      return true
+    else
+      return false
+    end
+  end
 end
