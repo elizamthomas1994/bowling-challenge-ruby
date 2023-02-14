@@ -12,7 +12,7 @@ class Frame
     return @roll2
   end
 
-  def score
+  def total
     return @roll1 + @roll2
   end
 end
